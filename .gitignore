@@ -31,5 +31,4 @@ npm-debug.log*
 /www
 /android
 /e2e
-/src/environments/environment.prod.ts
-/src/environments/environment.ts
+/src/environments/
