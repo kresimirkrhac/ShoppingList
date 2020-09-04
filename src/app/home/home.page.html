@@ -7,11 +7,6 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" padding>
-  <!-- <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Popis</ion-title>
-    </ion-toolbar>
-  </ion-header> -->
   <ng-container *ngIf="!shopCarts || (shopCarts && shopCarts.length == 0)">
     <div style="padding: 10px" routerLink="/details" routerDirection="forward">
       <ion-skeleton-text></ion-skeleton-text>
