@@ -1,0 +1,9 @@
+.strikeout {
+  text-decoration: line-through;
+  color: #777777;
+}
+.home-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr;
+}

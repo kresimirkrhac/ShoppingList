@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Artikl</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="full" *ngIf="shopCart">
+    <ion-item>
+      <ion-input required type="text" placeholder="Naziv proizvoda" [(ngModel)]="shopCart.productName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input required type="text" placeholder="Količina" [(ngModel)]="shopCart.amount"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input required type="text" placeholder="Mjera" [(ngModel)]="shopCart.unit"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="saveShopCart()">Spremi</ion-button>
+</ion-content>

@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>{{title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-list>
+  <ion-item>
+    <ion-label>
+      <h4>{{message}}</h4>
+    </ion-label>
+  </ion-item>
+</ion-list>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button slot="start" (click)="pop.dismiss()">
+      Ne
+      <ion-icon slot="end" name="close-outline"></ion-icon>
+    </ion-button>
+    <ion-button color="{{buttonColor}}" slot="end" (click)="action()">
+      {{buttonText}}
+      <ion-icon slot="end" name="checkmark-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
